@@ -1,12 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <div>
-        <img src="res/me.jpeg" width={"50%"}></img>
+        <img src="res/me.jpeg" width={"50%"} alt="me"></img>
       </div>
       <h1>
         Hi, I'm Swapneel Datta
@@ -18,8 +16,8 @@ function App() {
       I have a Master of Science from Maastricht university specializing in Artificial Intelligence. I also have a bachelor in Electronics and Telecommunication from VIT Pune.
       </p>
       <div>
-        <img src='res/ars.gif' width={"33%"}></img>
-        <img src='res/kalmann.gif' width={"33%"}></img>
+        <img src='res/ars.gif' width={"33%"} alt="Pathfinding using genetic algorithms"></img>
+        <img src='res/kalmann.gif' width={"33%"} alt="Self localization using Kalmann filters"></img>
       </div>
       <div>
         <h3>
