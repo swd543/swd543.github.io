@@ -90,7 +90,7 @@ const renderLoop = () => {
 
     setTimeout(() => {
         requestAnimationFrame(renderLoop);
-    }, 1000 / 100)
+    }, 1000 / 30)
 
 };
 
