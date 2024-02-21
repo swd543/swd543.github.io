@@ -26,6 +26,10 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
+    - name: Build wasm!
+      run: |
+        cd ../cgol-wasm && cargo install wasm-pack && wasm-pack build
+
     - name: Build
       run: |
         npx pnpm i
