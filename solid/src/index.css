@@ -1,0 +1,44 @@
+:root{
+  color-scheme: light dark;
+}
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: Canvas;
+  color: CanvasText;
+  border-color: ButtonBorder;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#game-of-life-canvas{
+  color-scheme: light dark;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  background-color: Canvas;
+  color: AccentColor;
+  accent-color: AccentColor;
+  border-color: Canvas;
+}
+
+@media(prefers-color-scheme: light) {
+  #game-of-life-canvas{
+    border-color: color-mix(in srgb, Canvas, black 1%);
+  } 
+}
+
+@media(prefers-color-scheme: dark) {
+  #game-of-life-canvas{
+    border-color: color-mix(in srgb, Canvas, white 1%);
+  } 
+}
