@@ -19,24 +19,24 @@ jobs:
         working-directory: ./solid
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build wasm!
+    - name: Cook wasm!
       run: |
         cd ../cgol-wasm && cargo install wasm-pack && wasm-pack build
 
-    - name: Build
+    - name: Reticulate solid splines
       run: |
         npx pnpm i
         npx pnpm build
 
     - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.4.3
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: gh-pages # The branch the action should deploy to.
         folder: ./solid/dist # The folder the action should deploy.
