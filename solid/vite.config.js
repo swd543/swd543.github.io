@@ -19,7 +19,7 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    watch: true,
+    // watch: true,
     cssMinify: true,
     minify: true
   },
